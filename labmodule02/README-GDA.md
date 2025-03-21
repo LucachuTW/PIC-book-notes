@@ -8,15 +8,15 @@ Be sure to implement all the PIOT-GDA-* issues.
 
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
-What does your implementation do? 
+In this module, I integrated a new SystemPerformanceManager into the core GDA application. This component actively gathers performance metrics, such as CPU and memory usage, through its scheduled tasks. I incorporated all the essential classes and interfaces to support this functionality, adhering closely to the architecture used in the CDA implementation.
 
-How does your implementation work?
+After merging the manager with the main app, I confirmed that it accurately collects and logs performance data, setting the stage for future modules to process and distribute these metrics to additional services.
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
 
-URL: 
+URL: https://github.com/LucachuTW/PIC-Java-components/tree/labmodule02
 
 
 ### Unit Tests Executed
@@ -25,9 +25,11 @@ NOTE: The instructor will execute your unit tests. You only need to list each te
 (e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
 since you need to ensure you haven't introduced regressions.
 
-- 
-- 
-- 
+- ConfigUtilTest  
+- DataUtilTest  
+- SystemPerformanceManagerTest  
+- SystemCpuUtilTaskTest  
+- SystemMemUtilTaskTest  
 
 ### Integration Tests Executed
 
@@ -36,8 +38,6 @@ some exceptions (such as your cloud connectivity tests). In such cases, they'll 
 your code to ensure it's correct. As for the tests you execute, you only need to list each
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
-- 
-- 
-- 
+- GatewayDeviceAppTest
 
 EOF.
