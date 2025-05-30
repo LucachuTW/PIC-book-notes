@@ -8,15 +8,20 @@ Be sure to implement all the PIOT-CDA-* issues (requirements) listed.
 
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
-What does your implementation do? 
+
+What does your implementation do?
+
+This implementation introduces a CoAP client designed to interface with the CoAP server developed in the previous lab session. The client is now able to perform basic queries to that server.
 
 How does your implementation work?
+
+To build the client, the coapthon library was utilized. It's worth noting that this library required a downgrade to an older version due to compatibility conflicts with Python 3. For verification of its operation, Wireshark was used once more, this time to monitor CoAP traffic.
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
 
-URL: 
+URL: https://github.com/LucachuTW/PIC-Python-components/tree/labmodule10
 
 
 
@@ -37,7 +42,7 @@ some exceptions (such as your cloud connectivity tests). In such cases, they'll 
 your code to ensure it's correct. As for the tests you execute, you only need to list each
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
-- 
+- CoapGatewayTest
 - 
 - 
 

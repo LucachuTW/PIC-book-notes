@@ -5,33 +5,26 @@ NOTE: Be sure to implement all the Lab Module 12 requirements listed at Lab Modu
 
 ## Description
 
-Describe your idea in 1 paragraph (at least 2 or 3 sentences).
+My idea was to add a light sensor and an LED display to an IoT system. The new sensor measures ambient light, and the LED display provides direct visual information or feedback.
 
+## What - The Problem
 
+The problem was that the system couldn't detect light levels or show simple visual updates. This matters because sensing light allows for smarter actions, like adjusting lighting for energy saving, and visual updates make it easier to see what the system is doing.
 
-## What - The Problem 
+## Why - Who Cares?
 
-What problem did you tackle and why does it matter? Write 1 to 2 paragraphs in response.
-
-
-
-## Why - Who Cares? 
-
-Why do you care about this particular problem? Write 1 to 2 paragraphs in response.
-
-
+I care about this because I wanted to make the IoT system more interactive and responsive to its environment. It’s a practical way to show how devices can sense their surroundings and communicate information clearly.
 
 ## How - Expected Technical Approach
 
-Write 1 to 2 paragraphs describing the outcomes you achieved.
-
+I added a new light sensor and an LED display. Code was created for these parts, allowing the sensor to gather light data and send it using MQTT. The LED display can now show this data or other system statuses, providing visual feedback.
 
 ### System Diagram
 
 Embed a block diagram depicting your overall design, including the CDA, GDA, and Cloud Services interactions.
 Be sure to include arrows depicting data flow from one application / service to the next.
 
-
+CDA <-> GDA <-> UbiDots Cloud
 
 Write 1 to 2 paragraphs describing your design.
 
@@ -39,25 +32,27 @@ Write 1 to 2 paragraphs describing your design.
 
 ### What THREE (3) sensors and ONE (1) actuator did you use (add more if you wish)?
 
-- CDA Sensor 1: 
+- CDA Sensor 1: Temperatura
 
-- CDA Sensor 2: 
+- CDA Sensor 2: Humedad
 
-- CDA Sensor 3: 
+- CDA Sensor 3: Presioón
 
-- CDA Actuator 1: 
+- CDA Sensor 4: Luminosidad
+
+- CDA Actuator 1: Led
 
 
 
 ### What ONE (1) CDA protocol and TWO (2) GDA protocols did you implement (add more if you wish)?
 
-- CDA to GDA Protocol: 
+- CDA to GDA Protocol: MQTT
 
-- GDA to CDA Protocol: 
+- GDA to CDA Protocol: MQTT
 
-- GDA to Cloud Protocol: 
+- GDA to Cloud Protocol: MQTT
 
-- Cloud to GDA Protocol: 
+- Cloud to GDA Protocol: MQTT
 
 
  
@@ -71,7 +66,7 @@ Write 1 to 2 paragraphs describing your design.
 
 ## Screen Shots Representing Cloud Services
 
-
+![alt text](image.png)
 
 ### Screen Shots Representing Visualized Data
 
@@ -79,6 +74,6 @@ NOTE: Include (at least) TWO (2) screen shots - one showing at least 1 hour
 of time-series data from the CDA, and one showing an event being triggered
 that results in an actuation event sent to your GDA and then to your CDA.
 
-
+Could not do it
 
 EOF.

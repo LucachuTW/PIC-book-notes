@@ -8,15 +8,19 @@ Be sure to implement all the PIOT-GDA-* issues (requirements) listed.
 
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
-What does your implementation do? 
+What does your implementation do?
+
+The system's various modules can now also leverage the CoAP protocol for communication, offering an alternative data exchange pathway.
 
 How does your implementation work?
+
+The CoapServerGateway module is responsible for the initiation and ongoing management of the CoAP server's operations, ensuring it runs as intended
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
 
-URL: 
+URL: https://github.com/LucachuTW/PIC-Java-components/tree/labmodule08
 
 
 ### Unit Tests Executed
@@ -36,8 +40,7 @@ some exceptions (such as your cloud connectivity tests). In such cases, they'll 
 your code to ensure it's correct. As for the tests you execute, you only need to list each
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
-- 
-- 
-- 
+- CoapServerGatewayTest
+
 
 EOF.

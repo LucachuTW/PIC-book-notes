@@ -8,9 +8,12 @@ Be sure to implement all the PIOT-CDA-* issues (requirements) listed.
 
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
-What does your implementation do? 
+What does your implementation do?
 
+The project's various components are now also capable of intercommunicating using the CoAP protocol, expanding their communication options.
 How does your implementation work?
+
+A dedicated module, CoapServerGateway, has been introduced to oversee the initialization and continuous operation of the CoAP server functionality.
 
 ### Code Repository and Branch
 

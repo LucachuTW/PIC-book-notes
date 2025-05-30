@@ -8,15 +8,20 @@ Be sure to implement all the PIOT-CDA-* issues (requirements) listed.
 
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
-What does your implementation do? 
+What does your implementation do?
+
+A new light sensor and its corresponding LED actuator have been introduced. These components generate realistic data that is transmitted via MQTT.
 
 How does your implementation work?
+
+Dedicated files were created for the luminosity sensor and the LED display. These files were then integrated into the project, along with any necessary associated files.
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
 
-URL: 
+URL: https://github.com/LucachuTW/PIC-Python-components/tree/labmodule12
+
 
 
 ### Unit Tests Executed
@@ -36,8 +41,8 @@ some exceptions (such as your cloud connectivity tests). In such cases, they'll 
 your code to ensure it's correct. As for the tests you execute, you only need to list each
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
-- 
-- 
+- LuminosityEmulatorTaskTest
+- LedActuatorEmulatorTaskTest
 - 
 
 EOF.

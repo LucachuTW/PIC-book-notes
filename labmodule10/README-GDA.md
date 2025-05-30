@@ -8,15 +8,19 @@ Be sure to implement all the PIOT-GDA-* issues (requirements) listed.
 
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
-What does your implementation do? 
+What does your implementation do?
+
+The GDA has been updated to process data received from the CDA in a secure and asynchronous manner.
 
 How does your implementation work?
+
+The system now operates by replacing MqttClient with MqttAsyncClient for asynchronous functionality, which necessitated adaptations to the MqttClientConnector. Additionally, encryption has been integrated into the communication, and IMqttMessageListener is utilized for message event handling.
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
 
-URL: 
+URL: https://github.com/LucachuTW/PIC-Java-components/tree/labmodule10
 
 
 
@@ -37,8 +41,8 @@ some exceptions (such as your cloud connectivity tests). In such cases, they'll 
 your code to ensure it's correct. As for the tests you execute, you only need to list each
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
-- 
-- 
+- MqttClientConnectorTest
+- CloudClientConnectorTest
 - 
 
 EOF.
